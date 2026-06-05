@@ -60,6 +60,7 @@ class ReminderForegroundService : Service(), TextToSpeech.OnInitListener {
                     finishReminder()
                 }
 
+                @Deprecated("Deprecated by the Android TextToSpeech API.")
                 override fun onError(utteranceId: String?) {
                     finishReminder()
                 }
